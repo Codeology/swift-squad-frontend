@@ -3,7 +3,7 @@
 ## Dependency installing: 
 Reference: https://www.raywenderlich.com/7076593-cocoapods-tutorial-for-swift-getting-started
 
-1. Install cocoapods \n
+1. Install cocoapods <br>
 From your terminal:
 `sudo gem install cocoapods`
 `pod setup --verbose`
