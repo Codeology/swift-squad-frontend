@@ -8,4 +8,4 @@ From your terminal:<br>
 `sudo gem install cocoapods`<br>
 `pod setup --verbose`
 
-2. Pull this repo, and open the `xcodeworkspace` from now on, not the `xcodeproj`
+2. Pull this repo, and open the `xcodeworkspace` from now on, not the `xcodeproj`, to ensure your dependencies work properly.
