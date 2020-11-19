@@ -1,0 +1,6 @@
+framework module Pods_vsco_front_end {
+  umbrella header "Pods-vsco-front-end-umbrella.h"
+
+  export *
+  module * { export * }
+}

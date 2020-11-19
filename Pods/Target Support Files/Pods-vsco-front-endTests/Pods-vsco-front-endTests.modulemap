@@ -1,0 +1,6 @@
+framework module Pods_vsco_front_endTests {
+  umbrella header "Pods-vsco-front-endTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
