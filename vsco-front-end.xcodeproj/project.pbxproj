@@ -14,6 +14,8 @@
 		7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD295253E93C900764E9C /* Assets.xcassets */; };
 		7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */; };
 		7F7BD2A4253E93C900764E9C /* vsco_front_endTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */; };
+		B11C65E525468F4500A06BC9 /* SecondView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B11C65E425468F4500A06BC9 /* SecondView.storyboard */; };
+		B11C65E925468F4F00A06BC9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11C65E825468F4F00A06BC9 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		7F7BD29F253E93C900764E9C /* vsco-front-endTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vsco-front-endTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vsco_front_endTests.swift; sourceTree = "<group>"; };
 		7F7BD2A5253E93C900764E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B11C65E425468F4500A06BC9 /* SecondView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondView.storyboard; sourceTree = "<group>"; };
+		B11C65E825468F4F00A06BC9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B19A34C6254687B700591AEE /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 		B19A34C7254687BA00591AEE /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		B19A34C8254687BA00591AEE /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				7F7BD28E253E93C700764E9C /* SceneDelegate.swift */,
 				7F7BD290253E93C700764E9C /* ViewController.swift */,
 				7F7BD292253E93C700764E9C /* Main.storyboard */,
+				B11C65E425468F4500A06BC9 /* SecondView.storyboard */,
+				B11C65E825468F4F00A06BC9 /* SecondViewController.swift */,
 				7F7BD295253E93C900764E9C /* Assets.xcassets */,
 				7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */,
 				B19A34C5254687B300591AEE /* fonts */,
@@ -219,6 +225,7 @@
 				7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */,
 				7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */,
 				7F7BD294253E93C700764E9C /* Main.storyboard in Resources */,
+				B11C65E525468F4500A06BC9 /* SecondView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11C65E925468F4F00A06BC9 /* SecondViewController.swift in Sources */,
 				7F7BD291253E93C700764E9C /* ViewController.swift in Sources */,
 				7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */,
 				7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */,

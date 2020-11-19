@@ -11,6 +11,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    let circle1 = CAShapeLayer();
+    let circle2 = CAShapeLayer();
+    let circle3 = CAShapeLayer();
+    let circle4 = CAShapeLayer();
+    let circle5 = CAShapeLayer();
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,33 +24,26 @@ class SecondViewController: UIViewController {
     }
     
     func drawCircles() {
-        let circle1 = CAShapeLayer();
-//        circle1.anchorPoint = CGPoint.zero
         circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 240, width: 114, height: 114)).cgPath;
         circle1.fillColor = hexStringToUIColor(hex: "FE9B74").cgColor;
         circle1.opacity = 0.8;
-//        circle1.bounds = (circle1.path?.boundingBox)!;
         view.layer.addSublayer(circle1);
         
-        let circle2 = CAShapeLayer();
         circle2.path = UIBezierPath(ovalIn: CGRect(x: 138, y: 290, width: 192, height: 192)).cgPath;
         view.layer.addSublayer(circle2);
         circle2.fillColor = hexStringToUIColor(hex: "2D2428").cgColor
         circle2.opacity = 0.8
         
-        let circle3 = CAShapeLayer();
         circle3.path = UIBezierPath(ovalIn: CGRect(x: 281, y: 420, width: 81, height: 81)).cgPath;
         view.layer.addSublayer(circle3);
         circle3.fillColor = hexStringToUIColor(hex: "E5AFA5").cgColor
         circle3.opacity = 0.8
         
-        let circle4 = CAShapeLayer();
         circle4.path = UIBezierPath(ovalIn: CGRect(x: 78, y: 430, width: 145, height: 145)).cgPath;
         view.layer.addSublayer(circle4);
         circle4.fillColor = hexStringToUIColor(hex: "413F58").cgColor
         circle4.opacity = 0.8
         
-        let circle5 = CAShapeLayer();
         circle5.path = UIBezierPath(ovalIn: CGRect(x: 175, y: 512, width: 120, height: 120)).cgPath;
         view.layer.addSublayer(circle5);
         circle5.fillColor = hexStringToUIColor(hex: "898198").cgColor
@@ -52,12 +51,18 @@ class SecondViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let point = touches.first?.location(in: self.view) // Where you pressed
-
-        if let layer = self.view.layer.hitTest(point!) as? CAShapeLayer { // If you hit a layer and if its a Shapelayer
-            if (layer.path?.contains(point!))! { // Optional, if you are inside its content path
-                print("Hit shapeLayer") // Do something
-            }
+        let touch = touches.first
+        let point = touch!.location(in: self.view)
+        if circle1.path!.contains(point) {
+            print ("We tapped the circle1")
+        } else if (circle2.path!.contains(point)) {
+            print ("We tapped the circle2")
+        } else if (circle3.path!.contains(point)) {
+            print ("We tapped the circle3")
+        } else if (circle4.path!.contains(point)) {
+            print ("We tapped the circle4")
+        } else if (circle5.path!.contains(point)) {
+            print ("We tapped the circle5")
         }
     }
     
