@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -128,6 +130,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         photos.layer.shadowRadius = 1
         photos.layer.shadowOpacity = 0.5
         photos.layer.cornerRadius = 20.0
+
+        AF.request("http://127.0.0.1:5000/endpoint").response { response in
+            debugPrint(response)
+        }
     }
     
     

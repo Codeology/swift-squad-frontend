@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (5.2.2)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - NavigationDrawer (1.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - NavigationDrawer
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - NavigationDrawer
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  NavigationDrawer: ad87622628ed59589f8fe8e2338d27109ca51a64
+
+PODFILE CHECKSUM: e8b53467e75b41e00fe0e90691b87c3dec83bed3
+
+COCOAPODS: 1.9.3
