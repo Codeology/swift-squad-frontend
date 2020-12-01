@@ -58,6 +58,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         }
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        var newImage: UIImage
+
+        if let possibleImage = info[.editedImage] as? UIImage {
+            newImage = possibleImage
+        } else if let possibleImage = info[.originalImage] as? UIImage {
+            newImage = possibleImage
+        } else {
+            return
+        }
+
+        // do something interesting here!
+        debugPrint("we have an image folks")
+
+        dismiss(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -131,6 +148,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         photos.layer.shadowOpacity = 0.5
         photos.layer.cornerRadius = 20.0
 
+        // HTTP TEST:
         AF.request("http://127.0.0.1:5000/endpoint").response { response in
             debugPrint(response)
         }
