@@ -70,8 +70,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         }
 
         // do something interesting here!
-        debugPrint("we have an image folks")
-
+        let imageData = newImage.jpegData(compressionQuality: 0.5)
+        let endpointUrl: String = "http://127.0.0.1:5000/endpoint"
+        
+        
+        AF.upload(
+            multipartFormData: { formData in
+                      formData.append(imageData!, withName: "image", fileName: "image.jpg", mimeType: "image/jpg")
+                  },
+                  to: endpointUrl
+            
+        ).response { response in
+            debugPrint(response)
+        }
+        
         dismiss(animated: true)
     }
     
@@ -149,9 +161,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         photos.layer.cornerRadius = 20.0
 
         // HTTP TEST:
-        AF.request("http://127.0.0.1:5000/endpoint").response { response in
-            debugPrint(response)
-        }
+//        AF.request("http://127.0.0.1:5000/endpoint").response { response in
+//            debugPrint(response)
+//        }
     }
     
     
