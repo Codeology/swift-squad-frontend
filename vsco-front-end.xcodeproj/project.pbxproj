@@ -9,11 +9,25 @@
 /* Begin PBXBuildFile section */
 		7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD28C253E93C700764E9C /* AppDelegate.swift */; };
 		7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD28E253E93C700764E9C /* SceneDelegate.swift */; };
-		7F7BD291253E93C700764E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD290253E93C700764E9C /* ViewController.swift */; };
 		7F7BD294253E93C700764E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD292253E93C700764E9C /* Main.storyboard */; };
 		7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD295253E93C900764E9C /* Assets.xcassets */; };
 		7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */; };
 		7F7BD2A4253E93C900764E9C /* vsco_front_endTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */; };
+		D02ABF4E255D0344002A1CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD290253E93C700764E9C /* ViewController.swift */; };
+		D0FCE0D425663C33006E549C /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34C6254687B700591AEE /* Nunito-Black.ttf */; };
+		D0FCE0D525663C33006E549C /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34D0254687BA00591AEE /* Nunito-BlackItalic.ttf */; };
+		D0FCE0D625663C33006E549C /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34D1254687BA00591AEE /* Nunito-Bold.ttf */; };
+		D0FCE0D725663C33006E549C /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34D2254687BA00591AEE /* Nunito-BoldItalic.ttf */; };
+		D0FCE0D825663C33006E549C /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34CF254687BA00591AEE /* Nunito-ExtraBold.ttf */; };
+		D0FCE0D925663C33006E549C /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34C9254687BA00591AEE /* Nunito-ExtraBoldItalic.ttf */; };
+		D0FCE0DA25663C33006E549C /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34C8254687BA00591AEE /* Nunito-ExtraLight.ttf */; };
+		D0FCE0DB25663C33006E549C /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34C7254687BA00591AEE /* Nunito-ExtraLightItalic.ttf */; };
+		D0FCE0DC25663C33006E549C /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34CB254687BA00591AEE /* Nunito-Italic.ttf */; };
+		D0FCE0DD25663C33006E549C /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34CE254687BA00591AEE /* Nunito-Light.ttf */; };
+		D0FCE0DE25663C33006E549C /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34CC254687BA00591AEE /* Nunito-LightItalic.ttf */; };
+		D0FCE0DF25663C33006E549C /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34CD254687BA00591AEE /* Nunito-Regular.ttf */; };
+		D0FCE0E025663C33006E549C /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34CA254687BA00591AEE /* Nunito-SemiBold.ttf */; };
+		D0FCE0E125663C33006E549C /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34D3254687BA00591AEE /* Nunito-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +230,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FCE0D425663C33006E549C /* Nunito-Black.ttf in Resources */,
+				D0FCE0D525663C33006E549C /* Nunito-BlackItalic.ttf in Resources */,
+				D0FCE0D625663C33006E549C /* Nunito-Bold.ttf in Resources */,
+				D0FCE0D725663C33006E549C /* Nunito-BoldItalic.ttf in Resources */,
+				D0FCE0D825663C33006E549C /* Nunito-ExtraBold.ttf in Resources */,
+				D0FCE0D925663C33006E549C /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				D0FCE0DA25663C33006E549C /* Nunito-ExtraLight.ttf in Resources */,
+				D0FCE0DB25663C33006E549C /* Nunito-ExtraLightItalic.ttf in Resources */,
+				D0FCE0DC25663C33006E549C /* Nunito-Italic.ttf in Resources */,
+				D0FCE0DD25663C33006E549C /* Nunito-Light.ttf in Resources */,
+				D0FCE0DE25663C33006E549C /* Nunito-LightItalic.ttf in Resources */,
+				D0FCE0DF25663C33006E549C /* Nunito-Regular.ttf in Resources */,
+				D0FCE0E025663C33006E549C /* Nunito-SemiBold.ttf in Resources */,
+				D0FCE0E125663C33006E549C /* Nunito-SemiBoldItalic.ttf in Resources */,
 				7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */,
 				7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */,
 				7F7BD294253E93C700764E9C /* Main.storyboard in Resources */,
@@ -236,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F7BD291253E93C700764E9C /* ViewController.swift in Sources */,
+				D02ABF4E255D0344002A1CEB /* ViewController.swift in Sources */,
 				7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */,
 				7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */,
 			);
