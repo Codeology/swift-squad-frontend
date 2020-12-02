@@ -74,6 +74,7 @@
                                     <imageReference key="image" image="camera.fill" catalog="system" symbolScale="default"/>
                                 </state>
                                 <connections>
+                                    <action selector="openCameraButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dqa-ZN-33O"/>
                                     <action selector="openPhotoLibraryButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khN-Tn-pej"/>
                                 </connections>
                             </button>
