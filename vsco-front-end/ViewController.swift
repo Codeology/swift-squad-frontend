@@ -40,8 +40,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         let colors: [String]
     }
 
+    @IBOutlet weak var vscodeology: UILabel!
+    @IBOutlet weak var text: UILabel!
     @IBOutlet weak var camera: UIButton!
-    
     @IBOutlet weak var photos: UIButton!
     
     @IBAction func openCameraButton(sender: AnyObject) {
@@ -80,6 +81,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         let imageData = newImage.jpegData(compressionQuality: 0.5)
         let endpointUrl: String = "http://127.0.0.1:5000/endpoint"
         
+        hideElements()
+        let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+        view.addSubview(activityIndicator)
+        activityIndicator.transform = CGAffineTransform(scaleX: 1.5, y: 1.5);
+        activityIndicator.center = CGPoint(x: view.frame.size.width * 0.5, y: view.frame.size.height * 0.5)
+        activityIndicator.startAnimating()
         
         AF.upload(
             multipartFormData: { formData in
@@ -90,11 +97,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         ).responseDecodable(of: colorList.self) { response in
             debugPrint(response)
             colors = response.value?.colors ?? ["none"]
+            
+            activityIndicator.stopAnimating()
+            activityIndicator.removeFromSuperview()
+            
             self.dismiss(animated: false, completion: nil)
             self.performSegue(withIdentifier: "circlesSegue", sender: self)
+            self.showElements()
         }
         dismiss(animated: true)
-        performSegue(withIdentifier: "generationSegue", sender: self)
     }
     
     override func viewDidLoad() {
@@ -102,6 +113,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         // Do any additional setup after loading the view.
         
         drawCirclesAndButtons();
+    }
+    
+    func hideElements() {
+        vscodeology.isHidden = true
+        text.isHidden = true
+        camera.isHidden = true
+        photos.isHidden = true
+    }
+    
+    public func showElements() {
+        vscodeology.isHidden = false
+        text.isHidden = false
+        camera.isHidden = false
+        photos.isHidden = false
     }
     
     func drawCirclesAndButtons() {

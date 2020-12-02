@@ -85,8 +85,9 @@
                     <connections>
                         <outlet property="camera" destination="yM3-2P-ErM" id="DId-Av-jDV"/>
                         <outlet property="photos" destination="FeM-Z8-XGu" id="bMc-Q1-450"/>
-                        <segue destination="Ppi-Cf-PCt" kind="presentation" identifier="generationSegue" modalPresentationStyle="fullScreen" id="uID-hQ-Vwg"/>
-                        <segue destination="HHJ-wG-BmP" kind="presentation" identifier="circlesSegue" modalPresentationStyle="fullScreen" id="Omq-TK-sTd"/>
+                        <outlet property="text" destination="bLl-PR-F6z" id="D69-rM-Mkg"/>
+                        <outlet property="vscodeology" destination="Ana-gc-UXE" id="C8v-nh-udQ"/>
+                        <segue destination="HHJ-wG-BmP" kind="presentation" identifier="circlesSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Omq-TK-sTd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -142,31 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="two-nD-wvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="451"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tP4-SG-l79">
-            <objects>
-                <viewController id="Ppi-Cf-PCt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P29-qq-obV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-dn-alM">
-                                <rect key="frame" x="140" y="425" width="135" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="4py-Gt-lBI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P5p-jj-e4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1039" y="-298"/>
+            <point key="canvasLocation" x="988" y="108"/>
         </scene>
     </scenes>
     <resources>
