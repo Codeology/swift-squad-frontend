@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0976337012ABCBB28EF201CF /* Pods_vsco_front_end.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF272F79204576540290B4 /* Pods_vsco_front_end.framework */; };
+		6BF3A46C56BB8C84B5A3DB53 /* Pods_vsco_front_endTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FAF6B904EEA77E07B7B317 /* Pods_vsco_front_endTests.framework */; };
 		7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD28C253E93C700764E9C /* AppDelegate.swift */; };
 		7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD28E253E93C700764E9C /* SceneDelegate.swift */; };
 		7F7BD294253E93C700764E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD292253E93C700764E9C /* Main.storyboard */; };
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E213720ED8AC5298B2196AF /* Pods-vsco-front-endTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vsco-front-endTests.release.xcconfig"; path = "Target Support Files/Pods-vsco-front-endTests/Pods-vsco-front-endTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E6FEDA0BF1415BD794F5F06 /* Pods-vsco-front-end.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vsco-front-end.release.xcconfig"; path = "Target Support Files/Pods-vsco-front-end/Pods-vsco-front-end.release.xcconfig"; sourceTree = "<group>"; };
+		62FAF6B904EEA77E07B7B317 /* Pods_vsco_front_endTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vsco_front_endTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BF272F79204576540290B4 /* Pods_vsco_front_end.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vsco_front_end.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BD289253E93C600764E9C /* vsco-front-end.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vsco-front-end.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BD28C253E93C700764E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7BD28E253E93C700764E9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 		7F7BD29F253E93C900764E9C /* vsco-front-endTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vsco-front-endTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vsco_front_endTests.swift; sourceTree = "<group>"; };
 		7F7BD2A5253E93C900764E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F800BEA2AD8FDEC4E3CFAFA /* Pods-vsco-front-endTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vsco-front-endTests.debug.xcconfig"; path = "Target Support Files/Pods-vsco-front-endTests/Pods-vsco-front-endTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B19A34C6254687B700591AEE /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 		B19A34C7254687BA00591AEE /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		B19A34C8254687BA00591AEE /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		B19A34D1254687BA00591AEE /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		B19A34D2254687BA00591AEE /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
 		B19A34D3254687BA00591AEE /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F7F380B19C60EBE7F9DC8D2D /* Pods-vsco-front-end.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vsco-front-end.debug.xcconfig"; path = "Target Support Files/Pods-vsco-front-end/Pods-vsco-front-end.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0976337012ABCBB28EF201CF /* Pods_vsco_front_end.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF3A46C56BB8C84B5A3DB53 /* Pods_vsco_front_endTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,8 @@
 				7F7BD28B253E93C600764E9C /* vsco-front-end */,
 				7F7BD2A2253E93C900764E9C /* vsco-front-endTests */,
 				7F7BD28A253E93C600764E9C /* Products */,
+				B1A09007A39D4C30B9421D65 /* Pods */,
+				BEADE7CD5BA5993A2916285A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +161,27 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		B1A09007A39D4C30B9421D65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F380B19C60EBE7F9DC8D2D /* Pods-vsco-front-end.debug.xcconfig */,
+				4E6FEDA0BF1415BD794F5F06 /* Pods-vsco-front-end.release.xcconfig */,
+				7F800BEA2AD8FDEC4E3CFAFA /* Pods-vsco-front-endTests.debug.xcconfig */,
+				1E213720ED8AC5298B2196AF /* Pods-vsco-front-endTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEADE7CD5BA5993A2916285A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65BF272F79204576540290B4 /* Pods_vsco_front_end.framework */,
+				62FAF6B904EEA77E07B7B317 /* Pods_vsco_front_endTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F7BD2A8253E93C900764E9C /* Build configuration list for PBXNativeTarget "vsco-front-end" */;
 			buildPhases = (
+				BBECA193A374DF0DEA6C4848 /* [CP] Check Pods Manifest.lock */,
 				7F7BD285253E93C600764E9C /* Sources */,
 				7F7BD286253E93C600764E9C /* Frameworks */,
 				7F7BD287253E93C600764E9C /* Resources */,
+				1609254B1C53846532FACD98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F7BD2AB253E93C900764E9C /* Build configuration list for PBXNativeTarget "vsco-front-endTests" */;
 			buildPhases = (
+				5C4BF51EADD917421528B3ED /* [CP] Check Pods Manifest.lock */,
 				7F7BD29B253E93C900764E9C /* Sources */,
 				7F7BD29C253E93C900764E9C /* Frameworks */,
 				7F7BD29D253E93C900764E9C /* Resources */,
@@ -258,6 +294,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1609254B1C53846532FACD98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vsco-front-end/Pods-vsco-front-end-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vsco-front-end/Pods-vsco-front-end-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vsco-front-end/Pods-vsco-front-end-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C4BF51EADD917421528B3ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vsco-front-endTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBECA193A374DF0DEA6C4848 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vsco-front-end-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F7BD285253E93C600764E9C /* Sources */ = {
@@ -424,6 +524,7 @@
 		};
 		7F7BD2A9253E93C900764E9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F380B19C60EBE7F9DC8D2D /* Pods-vsco-front-end.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +542,7 @@
 		};
 		7F7BD2AA253E93C900764E9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6FEDA0BF1415BD794F5F06 /* Pods-vsco-front-end.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +560,7 @@
 		};
 		7F7BD2AC253E93C900764E9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F800BEA2AD8FDEC4E3CFAFA /* Pods-vsco-front-endTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +582,7 @@
 		};
 		7F7BD2AD253E93C900764E9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E213720ED8AC5298B2196AF /* Pods-vsco-front-endTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

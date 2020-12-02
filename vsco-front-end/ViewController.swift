@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -56,6 +58,35 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             self.present(photo, animated: true, completion: nil)
 //            performSegue(withIdentifier: "generationSegue", sender: self)
         }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        var newImage: UIImage
+
+        if let possibleImage = info[.editedImage] as? UIImage {
+            newImage = possibleImage
+        } else if let possibleImage = info[.originalImage] as? UIImage {
+            newImage = possibleImage
+        } else {
+            return
+        }
+
+        // do something interesting here!
+        let imageData = newImage.jpegData(compressionQuality: 0.5)
+        let endpointUrl: String = "http://127.0.0.1:5000/endpoint"
+        
+        
+        AF.upload(
+            multipartFormData: { formData in
+                      formData.append(imageData!, withName: "image", fileName: "image.jpg", mimeType: "image/jpg")
+                  },
+                  to: endpointUrl
+            
+        ).response { response in
+            debugPrint(response)
+        }
+        
+        dismiss(animated: true)
     }
     
     override func viewDidLoad() {
@@ -128,5 +159,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         photos.layer.shadowRadius = 1
         photos.layer.shadowOpacity = 0.5
         photos.layer.cornerRadius = 20.0
+
+        // HTTP TEST:
+//        AF.request("http://127.0.0.1:5000/endpoint").response { response in
+//            debugPrint(response)
+//        }
     }
 }
