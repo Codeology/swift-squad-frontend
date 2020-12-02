@@ -22,6 +22,11 @@ class SecondViewController: UIViewController {
         drawCircles()
     }
     
+    // Go back to home page
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func drawCircles() {
         circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 240, width: 114, height: 114)).cgPath;
         circle1.fillColor = hexStringToUIColor(hex: colors[0]).cgColor;

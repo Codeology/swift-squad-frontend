@@ -120,10 +120,19 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-Sn-dVQ">
+                                <rect key="frame" x="284" y="725" width="131" height="77"/>
+                                <state key="normal" title="Button" image="Image"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="HHJ-wG-BmP" eventType="touchUpInside" id="JUC-ZY-Vy4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aI0-Oi-cxI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aI0-Oi-cxI" firstAttribute="bottom" secondItem="MbW-Sn-dVQ" secondAttribute="bottom" constant="60" id="MSb-QH-wJd"/>
+                            <constraint firstItem="MbW-Sn-dVQ" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="284" id="aDB-1O-RPf"/>
                             <constraint firstItem="UDY-lq-wgh" firstAttribute="top" secondItem="aI0-Oi-cxI" secondAttribute="top" constant="100" id="aeY-ou-1ax"/>
                             <constraint firstItem="UDY-lq-wgh" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="50" id="jZg-u9-oD0"/>
                         </constraints>
@@ -132,10 +141,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="two-nD-wvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1003" y="108"/>
+            <point key="canvasLocation" x="1002.8985507246377" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="77" height="77"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="film" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
