@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7A8D7C97-CA60-40AB-A010-AE82E94938C4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7307650-DE79-4EDA-B391-0CE14008EA55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "vsco-front-end/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C7307650-DE79-4EDA-B391-0CE14008EA55 - ddfd1e0c5a36bdae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vsco_front_end.ViewController.__deallocating_deinit"
+                  moduleName = "vsco-front-end"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylehua/Desktop/vsco-front-end/vsco-front-end/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "C7307650-DE79-4EDA-B391-0CE14008EA55 - 3e28e5fc6b00d246"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vsco_front_end.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; vsco_front_end.ViewController"
+                  moduleName = "vsco-front-end"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylehua/Desktop/vsco-front-end/vsco-front-end/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "C7307650-DE79-4EDA-B391-0CE14008EA55 - 379d11b6283cae06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vsco_front_end.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; vsco_front_end.ViewController"
+                  moduleName = "vsco-front-end"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylehua/Desktop/vsco-front-end/vsco-front-end/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "226">
+               </Location>
+               <Location
+                  uuid = "C7307650-DE79-4EDA-B391-0CE14008EA55 - 85bfc9afd068133e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vsco_front_end.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;vsco_front_end.ViewController&gt;"
+                  moduleName = "vsco-front-end"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylehua/Desktop/vsco-front-end/vsco-front-end/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "C7307650-DE79-4EDA-B391-0CE14008EA55 - ae87978f03f7a842"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "vsco_front_end.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;vsco_front_end.ViewController&gt;"
+                  moduleName = "vsco-front-end"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylehua/Desktop/vsco-front-end/vsco-front-end/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

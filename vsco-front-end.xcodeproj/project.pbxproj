@@ -14,6 +14,7 @@
 		7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD295253E93C900764E9C /* Assets.xcassets */; };
 		7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */; };
 		7F7BD2A4253E93C900764E9C /* vsco_front_endTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */; };
+		7FD285032553C99800CFE19F /* colorInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD285022553C99800CFE19F /* colorInfo.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		7F7BD29F253E93C900764E9C /* vsco-front-endTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vsco-front-endTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vsco_front_endTests.swift; sourceTree = "<group>"; };
 		7F7BD2A5253E93C900764E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD285022553C99800CFE19F /* colorInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = colorInfo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				7F7BD28E253E93C700764E9C /* SceneDelegate.swift */,
 				7F7BD290253E93C700764E9C /* ViewController.swift */,
 				7F7BD292253E93C700764E9C /* Main.storyboard */,
+				7FD285022553C99800CFE19F /* colorInfo.storyboard */,
 				7F7BD295253E93C900764E9C /* Assets.xcassets */,
 				7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */,
 				7F7BD29A253E93C900764E9C /* Info.plist */,
@@ -182,6 +185,7 @@
 			files = (
 				7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */,
 				7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */,
+				7FD285032553C99800CFE19F /* colorInfo.storyboard in Resources */,
 				7F7BD294253E93C700764E9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
