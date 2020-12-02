@@ -90,9 +90,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         ).responseDecodable(of: colorList.self) { response in
             debugPrint(response)
             colors = response.value?.colors ?? ["none"]
-            self.dismiss(animated: true)
-            self.performSegue(withIdentifier: "generationSegue", sender: self)
+            self.dismiss(animated: false, completion: nil)
+            self.performSegue(withIdentifier: "circlesSegue", sender: self)
         }
+        dismiss(animated: true)
+        performSegue(withIdentifier: "generationSegue", sender: self)
     }
     
     override func viewDidLoad() {
