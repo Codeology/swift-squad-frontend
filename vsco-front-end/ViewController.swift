@@ -43,6 +43,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             camera.sourceType = .camera;
             camera.allowsEditing = false
             self.present(camera, animated: true, completion: nil)
+//            performSegue(withIdentifier: "generationSegue", sender: self)
         }
     }
     
@@ -53,6 +54,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             photo.sourceType = .photoLibrary;
             photo.allowsEditing = true
             self.present(photo, animated: true, completion: nil)
+//            performSegue(withIdentifier: "generationSegue", sender: self)
         }
     }
     
@@ -60,22 +62,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
-        
+        drawCirclesAndButtons();
+    }
+    
+    func drawCirclesAndButtons() {
         let circleLayer1 = CAShapeLayer();
         circleLayer1.path = UIBezierPath(ovalIn: CGRect(x: 200, y: 290, width: 190, height: 190)).cgPath;
         view.layer.addSublayer(circleLayer1);
         circleLayer1.fillColor = hexStringToUIColor(hex: "D1E5AA").cgColor;
         circleLayer1.opacity = 0.8
         
-        
-        
         let circleLayer2 = CAShapeLayer();
         circleLayer2.path = UIBezierPath(ovalIn: CGRect(x: 257, y: 240, width: 23, height: 23)).cgPath;
         view.layer.addSublayer(circleLayer2);
         circleLayer2.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer2.opacity = 0.8
-        
         
         let circleLayer3 = CAShapeLayer();
         circleLayer3.path = UIBezierPath(ovalIn: CGRect(x: 60, y: 100, width: 71, height: 71)).cgPath;
@@ -122,16 +123,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         view.bringSubviewToFront(camera)
         view.bringSubviewToFront(photos)
         
-        
         photos.layer.shadowColor = UIColor.black.cgColor
         photos.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         photos.layer.shadowRadius = 1
         photos.layer.shadowOpacity = 0.5
         photos.layer.cornerRadius = 20.0
     }
-    
-    
-
-
 }
-
