@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
+public var colors = [String]()
+
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
@@ -33,6 +35,10 @@ func hexStringToUIColor (hex:String) -> UIColor {
 }
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    
+    struct colorList: Decodable {
+        let colors: [String]
+    }
 
     @IBOutlet weak var camera: UIButton!
     
@@ -81,12 +87,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
                   },
                   to: endpointUrl
             
-        ).response { response in
+        ).responseDecodable(of: colorList.self) { response in
             debugPrint(response)
+            colors = response.value?.colors ?? ["none"]
+            self.dismiss(animated: true)
+            self.performSegue(withIdentifier: "generationSegue", sender: self)
         }
-        
-        dismiss(animated: true)
-        performSegue(withIdentifier: "generationSegue", sender: self)
     }
     
     override func viewDidLoad() {

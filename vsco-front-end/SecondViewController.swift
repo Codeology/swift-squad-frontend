@@ -24,7 +24,7 @@ class SecondViewController: UIViewController {
     
     func drawCircles() {
         circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 240, width: 114, height: 114)).cgPath;
-        circle1.fillColor = hexStringToUIColor(hex: "FE9B74").cgColor;
+        circle1.fillColor = hexStringToUIColor(hex: colors[0]).cgColor;
         circle1.opacity = 0.8;
         circle1.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
         circle1.shadowRadius = 2.0;
@@ -33,7 +33,7 @@ class SecondViewController: UIViewController {
         view.layer.addSublayer(circle1);
         
         circle2.path = UIBezierPath(ovalIn: CGRect(x: 138, y: 290, width: 192, height: 192)).cgPath;
-        circle2.fillColor = hexStringToUIColor(hex: "2D2428").cgColor;
+        circle2.fillColor = hexStringToUIColor(hex: colors[1]).cgColor;
         circle2.opacity = 0.8;
         circle2.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
         circle2.shadowRadius = 2.0;
@@ -42,7 +42,7 @@ class SecondViewController: UIViewController {
         view.layer.addSublayer(circle2);
         
         circle3.path = UIBezierPath(ovalIn: CGRect(x: 281, y: 420, width: 81, height: 81)).cgPath;
-        circle3.fillColor = hexStringToUIColor(hex: "E5AFA5").cgColor;
+        circle3.fillColor = hexStringToUIColor(hex: colors[2]).cgColor;
         circle3.opacity = 0.8;
         circle3.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
         circle3.shadowRadius = 2.0;
@@ -51,7 +51,7 @@ class SecondViewController: UIViewController {
         view.layer.addSublayer(circle3);
         
         circle4.path = UIBezierPath(ovalIn: CGRect(x: 78, y: 430, width: 145, height: 145)).cgPath;
-        circle4.fillColor = hexStringToUIColor(hex: "413F58").cgColor;
+        circle4.fillColor = hexStringToUIColor(hex: colors[3]).cgColor;
         circle4.opacity = 0.8;
         circle4.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
         circle4.shadowRadius = 2.0;
@@ -60,7 +60,7 @@ class SecondViewController: UIViewController {
         view.layer.addSublayer(circle4);
         
         circle5.path = UIBezierPath(ovalIn: CGRect(x: 175, y: 512, width: 120, height: 120)).cgPath;
-        circle5.fillColor = hexStringToUIColor(hex: "898198").cgColor;
+        circle5.fillColor = hexStringToUIColor(hex: colors[4]).cgColor;
         circle5.opacity = 0.8;
         circle5.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
         circle5.shadowRadius = 2.0;
@@ -83,27 +83,5 @@ class SecondViewController: UIViewController {
         } else if (circle5.path!.contains(point)) {
             print ("We tapped the circle5")
         }
-    }
-    
-    func hexStringToUIColor (hex:String) -> UIColor {
-        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-
-        if (cString.hasPrefix("#")) {
-            cString.remove(at: cString.startIndex)
-        }
-
-        if ((cString.count) != 6) {
-            return UIColor.gray
-        }
-
-        var rgbValue:UInt64 = 0
-        Scanner(string: cString).scanHexInt64(&rgbValue)
-
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
     }
 }
