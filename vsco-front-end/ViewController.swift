@@ -56,7 +56,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             photo.sourceType = .photoLibrary;
             photo.allowsEditing = true
             self.present(photo, animated: true, completion: nil)
-//            performSegue(withIdentifier: "generationSegue", sender: self)
         }
     }
     
@@ -87,6 +86,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         }
         
         dismiss(animated: true)
+        performSegue(withIdentifier: "generationSegue", sender: self)
     }
     
     override func viewDidLoad() {
@@ -104,7 +104,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         circleLayer1.opacity = 0.8
         
         let circleLayer2 = CAShapeLayer();
-        circleLayer2.path = UIBezierPath(ovalIn: CGRect(x: 257, y: 240, width: 23, height: 23)).cgPath;
+        circleLayer2.path = UIBezierPath(ovalIn: CGRect(x: 254, y: 237, width: 24, height: 24)).cgPath;
         view.layer.addSublayer(circleLayer2);
         circleLayer2.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer2.opacity = 0.8

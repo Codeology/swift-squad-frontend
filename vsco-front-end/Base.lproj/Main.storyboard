@@ -88,7 +88,7 @@
                     <connections>
                         <outlet property="camera" destination="3yD-kF-uGP" id="Y3G-q9-APs"/>
                         <outlet property="photos" destination="FeM-Z8-XGu" id="bMc-Q1-450"/>
-                        <segue destination="6D4-Tw-SAV" kind="presentation" identifier="generationSegue" id="VRr-jk-bVD"/>
+                        <segue destination="HHJ-wG-BmP" kind="presentation" identifier="generationSegue" modalPresentationStyle="fullScreen" id="NvU-0z-Bxw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -96,23 +96,23 @@
             <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
         </scene>
         <!--Second View Controller-->
-        <scene sceneID="KyV-tV-pzV">
+        <scene sceneID="cve-La-ppU">
             <objects>
-                <viewController id="6D4-Tw-SAV" customClass="SecondViewController" customModule="vsco_front_end" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V2j-nN-w0i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="HHJ-wG-BmP" customClass="SecondViewController" customModule="vsco_front_end" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rFc-Qt-CMX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-KH-APh">
-                                <rect key="frame" x="50" y="100" width="231" height="54"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UDY-lq-wgh">
+                                <rect key="frame" x="50" y="144" width="231" height="54"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your colors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUg-4O-eHY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your colors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVc-IF-mFm">
                                         <rect key="frame" x="0.0" y="0.0" width="231" height="30.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on a circle for more detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqh-MP-SDr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on a circle for more detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjF-BJ-pSf">
                                         <rect key="frame" x="0.0" y="30.5" width="231" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -121,17 +121,18 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="hBs-3B-mR1"/>
+                        <viewLayoutGuide key="safeArea" id="aI0-Oi-cxI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="M3e-KH-APh" firstAttribute="top" secondItem="hBs-3B-mR1" secondAttribute="top" constant="100" id="Tyf-gc-FxO"/>
-                            <constraint firstItem="M3e-KH-APh" firstAttribute="leading" secondItem="hBs-3B-mR1" secondAttribute="leading" constant="50" id="o4f-M4-MyT"/>
+                            <constraint firstItem="UDY-lq-wgh" firstAttribute="top" secondItem="aI0-Oi-cxI" secondAttribute="top" constant="100" id="aeY-ou-1ax"/>
+                            <constraint firstItem="UDY-lq-wgh" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="50" id="jZg-u9-oD0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="znA-Cc-8Ac"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PKB-c0-e1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="two-nD-wvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.985507246377" y="107.8125"/>
+            <point key="canvasLocation" x="1003" y="108"/>
         </scene>
     </scenes>
     <resources>
