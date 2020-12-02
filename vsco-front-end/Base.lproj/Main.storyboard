@@ -49,6 +49,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="-13"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="35"/>
                                 <state key="normal" title="Camera roll">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,27 +60,21 @@
                                     <action selector="openPhotoLibraryButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bdm-R5-fx0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yD-kF-uGP">
-                                <rect key="frame" x="59" y="413" width="128" height="154"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM3-2P-ErM">
+                                <rect key="frame" x="67" y="412" width="130" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Take a photo">
+                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="-15"/>
+                                <inset key="imageEdgeInsets" minX="52" minY="0.0" maxX="0.0" maxY="35"/>
+                                <state key="normal" title="Take a picture">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <imageReference key="image" image="camera.fill" catalog="system" symbolScale="default"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" systemColor="systemYellowColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="openCameraButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m2F-3m-eZI"/>
+                                    <action selector="openPhotoLibraryButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khN-Tn-pej"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,7 +82,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="camera" destination="3yD-kF-uGP" id="Y3G-q9-APs"/>
+                        <outlet property="camera" destination="yM3-2P-ErM" id="DId-Av-jDV"/>
                         <outlet property="photos" destination="FeM-Z8-XGu" id="bMc-Q1-450"/>
                         <segue destination="HHJ-wG-BmP" kind="presentation" identifier="generationSegue" modalPresentationStyle="fullScreen" id="NvU-0z-Bxw"/>
                     </connections>
@@ -121,8 +117,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbW-Sn-dVQ">
-                                <rect key="frame" x="284" y="725" width="131" height="77"/>
-                                <state key="normal" title="Button" image="Image"/>
+                                <rect key="frame" x="284" y="715" width="77" height="77"/>
+                                <state key="normal" image="Image"/>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="HHJ-wG-BmP" eventType="touchUpInside" id="JUC-ZY-Vy4"/>
                                 </connections>
@@ -131,13 +127,16 @@
                         <viewLayoutGuide key="safeArea" id="aI0-Oi-cxI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aI0-Oi-cxI" firstAttribute="bottom" secondItem="MbW-Sn-dVQ" secondAttribute="bottom" constant="60" id="MSb-QH-wJd"/>
+                            <constraint firstItem="aI0-Oi-cxI" firstAttribute="bottom" secondItem="MbW-Sn-dVQ" secondAttribute="bottom" constant="70" id="MSb-QH-wJd"/>
                             <constraint firstItem="MbW-Sn-dVQ" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="284" id="aDB-1O-RPf"/>
                             <constraint firstItem="UDY-lq-wgh" firstAttribute="top" secondItem="aI0-Oi-cxI" secondAttribute="top" constant="100" id="aeY-ou-1ax"/>
                             <constraint firstItem="UDY-lq-wgh" firstAttribute="leading" secondItem="aI0-Oi-cxI" secondAttribute="leading" constant="50" id="jZg-u9-oD0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="znA-Cc-8Ac"/>
+                    <connections>
+                        <outlet property="backButton" destination="MbW-Sn-dVQ" id="vLS-9T-hM0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="two-nD-wvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,9 +149,6 @@
         <image name="film" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

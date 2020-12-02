@@ -10,6 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
+    
     let circle1 = CAShapeLayer();
     let circle2 = CAShapeLayer();
     let circle3 = CAShapeLayer();
@@ -31,47 +33,40 @@ class SecondViewController: UIViewController {
         circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 240, width: 114, height: 114)).cgPath;
         circle1.fillColor = hexStringToUIColor(hex: colors[0]).cgColor;
         circle1.opacity = 0.8;
-        circle1.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
-        circle1.shadowRadius = 2.0;
-        circle1.shadowOpacity = 0.8;
-        circle1.shadowOffset = CGSize(width: 0, height: 4);
         view.layer.addSublayer(circle1);
         
         circle2.path = UIBezierPath(ovalIn: CGRect(x: 138, y: 290, width: 192, height: 192)).cgPath;
         circle2.fillColor = hexStringToUIColor(hex: colors[1]).cgColor;
         circle2.opacity = 0.8;
-        circle2.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
-        circle2.shadowRadius = 2.0;
-        circle2.shadowOpacity = 0.8;
-        circle2.shadowOffset = CGSize(width: 0, height: 4);
         view.layer.addSublayer(circle2);
         
         circle3.path = UIBezierPath(ovalIn: CGRect(x: 281, y: 420, width: 81, height: 81)).cgPath;
         circle3.fillColor = hexStringToUIColor(hex: colors[2]).cgColor;
         circle3.opacity = 0.8;
-        circle3.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
-        circle3.shadowRadius = 2.0;
-        circle3.shadowOpacity = 0.8;
-        circle3.shadowOffset = CGSize(width: 0, height: 4);
         view.layer.addSublayer(circle3);
         
         circle4.path = UIBezierPath(ovalIn: CGRect(x: 78, y: 430, width: 145, height: 145)).cgPath;
         circle4.fillColor = hexStringToUIColor(hex: colors[3]).cgColor;
         circle4.opacity = 0.8;
-        circle4.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
-        circle4.shadowRadius = 2.0;
-        circle4.shadowOpacity = 0.8;
-        circle4.shadowOffset = CGSize(width: 0, height: 4);
         view.layer.addSublayer(circle4);
         
         circle5.path = UIBezierPath(ovalIn: CGRect(x: 175, y: 512, width: 120, height: 120)).cgPath;
         circle5.fillColor = hexStringToUIColor(hex: colors[4]).cgColor;
         circle5.opacity = 0.8;
-        circle5.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
-        circle5.shadowRadius = 2.0;
-        circle5.shadowOpacity = 0.8;
-        circle5.shadowOffset = CGSize(width: 0, height: 4);
         view.layer.addSublayer(circle5);
+        
+        let circleList = [circle1, circle2, circle3, circle4, circle5]
+        for circle in circleList {
+            circle.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
+            circle.shadowRadius = 2.0;
+            circle.shadowOpacity = 0.8;
+            circle.shadowOffset = CGSize(width: 0, height: 4);
+        }
+        
+        backButton.layer.shadowColor = UIColor.black.cgColor
+        backButton.layer.shadowOffset = CGSize(width: 0, height: 4.0)
+        backButton.layer.shadowRadius = 2
+        backButton.layer.shadowOpacity = 0.25
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

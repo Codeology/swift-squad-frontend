@@ -145,25 +145,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         circleLayer7.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer7.opacity = 0.8
         
-        camera.layer.borderWidth = 1;
-        camera.layer.borderColor = hexStringToUIColor(hex: "000000").cgColor;
+//        camera.layer.borderWidth = 1;
+//        camera.layer.borderColor = hexStringToUIColor(hex: "000000").cgColor;
         
-        photos.layer.borderWidth = 1;
-        photos.layer.borderColor = hexStringToUIColor(hex: "000000").cgColor;
-        
+//        photos.layer.borderWidth = 1;
+//        photos.layer.borderColor = hexStringToUIColor(hex: "000000").cgColor;
+//
         camera.layer.shadowColor = UIColor.black.cgColor
-        camera.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
-        camera.layer.shadowRadius = 1
-        camera.layer.shadowOpacity = 0.5
+        camera.layer.shadowOffset = CGSize(width: 0, height: 4.0)
+        camera.layer.shadowRadius = 2
+        camera.layer.shadowOpacity = 0.25
         camera.layer.cornerRadius = 20.0
         
         view.bringSubviewToFront(camera)
         view.bringSubviewToFront(photos)
         
         photos.layer.shadowColor = UIColor.black.cgColor
-        photos.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
-        photos.layer.shadowRadius = 1
-        photos.layer.shadowOpacity = 0.5
+        photos.layer.shadowOffset = CGSize(width: 0, height: 4.0)
+        photos.layer.shadowRadius = 2
+        photos.layer.shadowOpacity = 0.25
         photos.layer.cornerRadius = 20.0
 
         // HTTP TEST:
