@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		7F7BD296253E93C900764E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD295253E93C900764E9C /* Assets.xcassets */; };
 		7F7BD299253E93C900764E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */; };
 		7F7BD2A4253E93C900764E9C /* vsco_front_endTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */; };
+		B12594172578AE620096C753 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12594162578AE620096C753 /* SecondViewController.swift */; };
 		D02ABF4E255D0344002A1CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD290253E93C700764E9C /* ViewController.swift */; };
 		D0FCE0D425663C33006E549C /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34C6254687B700591AEE /* Nunito-Black.ttf */; };
 		D0FCE0D525663C33006E549C /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A34D0254687BA00591AEE /* Nunito-BlackItalic.ttf */; };
@@ -59,6 +60,7 @@
 		7F7BD2A3253E93C900764E9C /* vsco_front_endTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vsco_front_endTests.swift; sourceTree = "<group>"; };
 		7F7BD2A5253E93C900764E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F800BEA2AD8FDEC4E3CFAFA /* Pods-vsco-front-endTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vsco-front-endTests.debug.xcconfig"; path = "Target Support Files/Pods-vsco-front-endTests/Pods-vsco-front-endTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B12594162578AE620096C753 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B19A34C6254687B700591AEE /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 		B19A34C7254687BA00591AEE /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		B19A34C8254687BA00591AEE /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				7F7BD28C253E93C700764E9C /* AppDelegate.swift */,
 				7F7BD28E253E93C700764E9C /* SceneDelegate.swift */,
 				7F7BD290253E93C700764E9C /* ViewController.swift */,
+				B12594162578AE620096C753 /* SecondViewController.swift */,
 				7F7BD292253E93C700764E9C /* Main.storyboard */,
 				7F7BD295253E93C900764E9C /* Assets.xcassets */,
 				7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */,
@@ -169,7 +172,6 @@
 				7F800BEA2AD8FDEC4E3CFAFA /* Pods-vsco-front-endTests.debug.xcconfig */,
 				1E213720ED8AC5298B2196AF /* Pods-vsco-front-endTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -364,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12594172578AE620096C753 /* SecondViewController.swift in Sources */,
 				D02ABF4E255D0344002A1CEB /* ViewController.swift in Sources */,
 				7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */,
 				7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */,
