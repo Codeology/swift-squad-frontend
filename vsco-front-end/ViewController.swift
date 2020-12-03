@@ -11,6 +11,7 @@ import Alamofire
 import AlamofireImage
 
 public var colors = [String]()
+public var percentages = [Float]()
 
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -38,6 +39,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     
     struct colorList: Decodable {
         let colors: [String]
+        let percentages: [Float]
     }
 
     @IBOutlet weak var vscodeology: UILabel!
@@ -60,7 +62,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             let photo = UIImagePickerController()
             photo.delegate = self
             photo.sourceType = .photoLibrary;
-            photo.allowsEditing = true
+            photo.allowsEditing =  
             self.present(photo, animated: true, completion: nil)
         }
     }
@@ -96,6 +98,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         ).responseDecodable(of: colorList.self) { response in
             debugPrint(response)
             colors = response.value?.colors ?? ["none"]
+            percentages = response.value?.percentages ?? [0.0]
             
             activityIndicator.stopAnimating()
             activityIndicator.removeFromSuperview()
@@ -121,7 +124,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         photos.isHidden = true
     }
     
-    public func showElements() {
+    func showElements() {
         vscodeology.isHidden = false
         text.isHidden = false
         cameras.isHidden = false

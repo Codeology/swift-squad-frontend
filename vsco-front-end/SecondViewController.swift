@@ -30,28 +30,28 @@ class SecondViewController: UIViewController {
     }
     
     func drawCircles() {
-        circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 240, width: 114, height: 114)).cgPath;
-        circle1.fillColor = hexStringToUIColor(hex: colors[0]).cgColor;
+        circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 250, width: 114, height: 114)).cgPath;
+        circle1.fillColor = hexStringToUIColor(hex: colors[3]).cgColor;
         circle1.opacity = 0.8;
         view.layer.addSublayer(circle1);
         
         circle2.path = UIBezierPath(ovalIn: CGRect(x: 138, y: 290, width: 192, height: 192)).cgPath;
-        circle2.fillColor = hexStringToUIColor(hex: colors[1]).cgColor;
+        circle2.fillColor = hexStringToUIColor(hex: colors[0]).cgColor;
         circle2.opacity = 0.8;
         view.layer.addSublayer(circle2);
         
         circle3.path = UIBezierPath(ovalIn: CGRect(x: 281, y: 420, width: 81, height: 81)).cgPath;
-        circle3.fillColor = hexStringToUIColor(hex: colors[2]).cgColor;
+        circle3.fillColor = hexStringToUIColor(hex: colors[4]).cgColor;
         circle3.opacity = 0.8;
         view.layer.addSublayer(circle3);
         
-        circle4.path = UIBezierPath(ovalIn: CGRect(x: 78, y: 430, width: 145, height: 145)).cgPath;
-        circle4.fillColor = hexStringToUIColor(hex: colors[3]).cgColor;
+        circle4.path = UIBezierPath(ovalIn: CGRect(x: 78, y: 435, width: 145, height: 145)).cgPath;
+        circle4.fillColor = hexStringToUIColor(hex: colors[1]).cgColor;
         circle4.opacity = 0.8;
         view.layer.addSublayer(circle4);
         
-        circle5.path = UIBezierPath(ovalIn: CGRect(x: 175, y: 512, width: 120, height: 120)).cgPath;
-        circle5.fillColor = hexStringToUIColor(hex: colors[4]).cgColor;
+        circle5.path = UIBezierPath(ovalIn: CGRect(x: 180, y: 517, width: 120, height: 120)).cgPath;
+        circle5.fillColor = hexStringToUIColor(hex: colors[2]).cgColor;
         circle5.opacity = 0.8;
         view.layer.addSublayer(circle5);
         
