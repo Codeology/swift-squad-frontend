@@ -62,7 +62,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
             let photo = UIImagePickerController()
             photo.delegate = self
             photo.sourceType = .photoLibrary;
-            photo.allowsEditing =  
+            photo.allowsEditing = true
             self.present(photo, animated: true, completion: nil)
         }
     }
