@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var cirle1Color :String = ""
+    var cirle2Color :String = ""
+    var cirle3Color :String = ""
+    var cirle4Color :String = ""
+    var cirle5Color :String = ""
+    
     let circle1 = CAShapeLayer();
     let circle2 = CAShapeLayer();
     let circle3 = CAShapeLayer();
@@ -69,12 +75,12 @@ class ViewController: UIViewController {
         c2.text = "Main Color"
         
         let c3 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        c3.center = CGPoint(x: 262, y: 500)
+        c3.center = CGPoint(x: 252, y: 500)
         c3.textAlignment = .center
         c3.text = "Main Color"
         
         let c4 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-        c4.center = CGPoint(x: 262, y: 646)
+        c4.center = CGPoint(x: 252, y: 646)
         c4.textAlignment = .center
         c4.text = "Main Color"
         
