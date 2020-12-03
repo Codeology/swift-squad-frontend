@@ -42,17 +42,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
 
     @IBOutlet weak var vscodeology: UILabel!
     @IBOutlet weak var text: UILabel!
-    @IBOutlet weak var camera: UIButton!
+    @IBOutlet weak var cameras: UIButton!
     @IBOutlet weak var photos: UIButton!
     
-    @IBAction func openCameraButton(sender: AnyObject) {
+    @IBAction func openCameraButton(_ sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let camera = UIImagePickerController()
-            camera.delegate = self
-            camera.sourceType = .camera;
-            camera.allowsEditing = false
-            self.present(camera, animated: true, completion: nil)
-//            performSegue(withIdentifier: "generationSegue", sender: self)
+            let cameraPicker = UIImagePickerController()
+            cameraPicker.delegate = self
+            cameraPicker.sourceType = .camera;
+            cameraPicker.allowsEditing = false
+            self.present(cameraPicker, animated: true, completion: nil)
         }
     }
     
@@ -118,14 +117,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     func hideElements() {
         vscodeology.isHidden = true
         text.isHidden = true
-        camera.isHidden = true
+        cameras.isHidden = true
         photos.isHidden = true
     }
     
     public func showElements() {
         vscodeology.isHidden = false
         text.isHidden = false
-        camera.isHidden = false
+        cameras.isHidden = false
         photos.isHidden = false
     }
     
@@ -172,19 +171,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
         circleLayer7.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer7.opacity = 0.8
         
-//        camera.layer.borderWidth = 1;
-//        camera.layer.borderColor = hexStringToUIColor(hex: "000000").cgColor;
+        cameras.layer.shadowColor = UIColor.black.cgColor
+        cameras.layer.shadowOffset = CGSize(width: 0, height: 4.0)
+        cameras.layer.shadowRadius = 2
+        cameras.layer.shadowOpacity = 0.25
+        cameras.layer.cornerRadius = 20.0
         
-//        photos.layer.borderWidth = 1;
-//        photos.layer.borderColor = hexStringToUIColor(hex: "000000").cgColor;
-//
-        camera.layer.shadowColor = UIColor.black.cgColor
-        camera.layer.shadowOffset = CGSize(width: 0, height: 4.0)
-        camera.layer.shadowRadius = 2
-        camera.layer.shadowOpacity = 0.25
-        camera.layer.cornerRadius = 20.0
-        
-        view.bringSubviewToFront(camera)
+        view.bringSubviewToFront(cameras)
         view.bringSubviewToFront(photos)
         
         photos.layer.shadowColor = UIColor.black.cgColor

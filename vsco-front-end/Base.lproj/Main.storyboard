@@ -74,8 +74,7 @@
                                     <imageReference key="image" image="camera.fill" catalog="system" symbolScale="default"/>
                                 </state>
                                 <connections>
-                                    <action selector="openCameraButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dqa-ZN-33O"/>
-                                    <action selector="openPhotoLibraryButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khN-Tn-pej"/>
+                                    <action selector="openCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Bh-bK-CSe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,7 +82,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="camera" destination="yM3-2P-ErM" id="DId-Av-jDV"/>
+                        <outlet property="cameras" destination="yM3-2P-ErM" id="FlV-Ja-2pT"/>
                         <outlet property="photos" destination="FeM-Z8-XGu" id="bMc-Q1-450"/>
                         <outlet property="text" destination="bLl-PR-F6z" id="D69-rM-Mkg"/>
                         <outlet property="vscodeology" destination="Ana-gc-UXE" id="C8v-nh-udQ"/>
