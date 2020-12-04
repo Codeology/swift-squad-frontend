@@ -106,6 +106,7 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
            self.view.addSubview(c4)
        }
        
+    
        func loadImage(){
            let image = imageUsed
         let imageView = UIImageView(image: image)
