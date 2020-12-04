@@ -10,3 +10,7 @@ From your terminal:<br>
 `pod install`
 
 2. Pull this repo, and open the `xcworkspace` from now on, not the `xcodeproj`, to ensure your dependencies work properly.
+
+## Figma Design:
+https://www.figma.com/file/cMSY2tVUL3A0XbMwyyuLB5/vscodeology-mockup?node-id=178%3A31
+By Haotian Ye
