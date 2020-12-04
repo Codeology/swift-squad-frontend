@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0976337012ABCBB28EF201CF /* Pods_vsco_front_end.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF272F79204576540290B4 /* Pods_vsco_front_end.framework */; };
 		6BF3A46C56BB8C84B5A3DB53 /* Pods_vsco_front_endTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FAF6B904EEA77E07B7B317 /* Pods_vsco_front_endTests.framework */; };
+		7F6D1E432579AC83007E82E0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D1E422579AC83007E82E0 /* ThirdViewController.swift */; };
 		7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD28C253E93C700764E9C /* AppDelegate.swift */; };
 		7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BD28E253E93C700764E9C /* SceneDelegate.swift */; };
 		7F7BD294253E93C700764E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BD292253E93C700764E9C /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		4E6FEDA0BF1415BD794F5F06 /* Pods-vsco-front-end.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vsco-front-end.release.xcconfig"; path = "Target Support Files/Pods-vsco-front-end/Pods-vsco-front-end.release.xcconfig"; sourceTree = "<group>"; };
 		62FAF6B904EEA77E07B7B317 /* Pods_vsco_front_endTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vsco_front_endTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BF272F79204576540290B4 /* Pods_vsco_front_end.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vsco_front_end.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6D1E422579AC83007E82E0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		7F7BD289253E93C600764E9C /* vsco-front-end.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vsco-front-end.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7BD28C253E93C700764E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7BD28E253E93C700764E9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				7F7BD28E253E93C700764E9C /* SceneDelegate.swift */,
 				7F7BD290253E93C700764E9C /* ViewController.swift */,
 				B12594162578AE620096C753 /* SecondViewController.swift */,
+				7F6D1E422579AC83007E82E0 /* ThirdViewController.swift */,
 				7F7BD292253E93C700764E9C /* Main.storyboard */,
 				7F7BD295253E93C900764E9C /* Assets.xcassets */,
 				7F7BD297253E93C900764E9C /* LaunchScreen.storyboard */,
@@ -368,6 +371,7 @@
 			files = (
 				B12594172578AE620096C753 /* SecondViewController.swift in Sources */,
 				D02ABF4E255D0344002A1CEB /* ViewController.swift in Sources */,
+				7F6D1E432579AC83007E82E0 /* ThirdViewController.swift in Sources */,
 				7F7BD28D253E93C700764E9C /* AppDelegate.swift in Sources */,
 				7F7BD28F253E93C700764E9C /* SceneDelegate.swift in Sources */,
 			);

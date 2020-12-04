@@ -17,6 +17,13 @@ class SecondViewController: UIViewController {
     let circle3 = CAShapeLayer();
     let circle4 = CAShapeLayer();
     let circle5 = CAShapeLayer();
+    
+    var chosen = "";
+    var first = "";
+    var second = "";
+    var third = "";
+    var fourth = "";
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,15 +80,50 @@ class SecondViewController: UIViewController {
         let touch = touches.first
         let point = touch!.location(in: self.view)
         if circle1.path!.contains(point) {
-            print ("We tapped the circle1")
+            chosen = colors[3]
+            first = colors[0]
+            second = colors[1]
+            third = colors[2]
+            fourth = colors[4]
+            performSegue(withIdentifier: "Colors", sender: self)
         } else if (circle2.path!.contains(point)) {
-            print ("We tapped the circle2")
+            chosen = colors[0]
+            first = colors[1]
+            second = colors[2]
+            third = colors[3]
+            fourth = colors[4]
+            performSegue(withIdentifier: "Colors", sender: self)
         } else if (circle3.path!.contains(point)) {
-            print ("We tapped the circle3")
+            chosen = colors[4]
+              first = colors[0]
+              second = colors[1]
+              third = colors[2]
+              fourth = colors[3]
+              performSegue(withIdentifier: "Colors", sender: self)
         } else if (circle4.path!.contains(point)) {
-            print ("We tapped the circle4")
+            chosen = colors[1]
+              first = colors[0]
+              second = colors[2]
+              third = colors[3]
+              fourth = colors[4]
+              performSegue(withIdentifier: "Colors", sender: self)
         } else if (circle5.path!.contains(point)) {
-            print ("We tapped the circle5")
+            chosen = colors[2]
+            first = colors[0]
+            second = colors[1]
+            third = colors[3]
+            fourth = colors[4]
+            performSegue(withIdentifier: "Colors", sender: self)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC : ThirdViewController = segue.destination as! ThirdViewController
+        
+        destVC.cirle1Color = chosen
+        destVC.cirle2Color = first
+        destVC.cirle3Color = second
+        destVC.cirle4Color = third
+        destVC.cirle5Color = fourth
+}
 }
