@@ -12,6 +12,7 @@ import AlamofireImage
 
 public var colors = [String]()
 public var percentages = [Float]()
+public var imageUsed = UIImage()
 
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -72,8 +73,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
 
         if let possibleImage = info[.editedImage] as? UIImage {
             newImage = possibleImage
+            imageUsed = newImage
         } else if let possibleImage = info[.originalImage] as? UIImage {
             newImage = possibleImage
+            imageUsed = newImage
         } else {
             return
         }

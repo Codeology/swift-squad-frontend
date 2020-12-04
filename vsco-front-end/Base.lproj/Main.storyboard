@@ -161,21 +161,41 @@
                                     <action selector="backButtonPressed:" destination="OUc-sg-ZSa" eventType="touchUpInside" id="wQ9-5L-DeO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palette:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy1-Lp-9bW">
+                                <rect key="frame" x="65" y="394" width="77" height="31"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gew-ot-d4c">
+                                <rect key="frame" x="0.0" y="32" width="414" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="qZJ-dz-MWj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eE8-eK-KYq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iRd-NA-bc4" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" constant="284" id="6ah-Tq-ypc"/>
+                            <constraint firstItem="eE8-eK-KYq" firstAttribute="bottom" secondItem="gew-ot-d4c" secondAttribute="bottom" constant="609" id="7qq-iq-NJc"/>
+                            <constraint firstItem="gew-ot-d4c" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" id="G0J-e0-Yzm"/>
+                            <constraint firstItem="eE8-eK-KYq" firstAttribute="top" secondItem="gew-ot-d4c" secondAttribute="top" constant="12" id="WAs-a7-Fce"/>
+                            <constraint firstItem="Sy1-Lp-9bW" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" constant="65" id="eUN-fH-c1S"/>
                             <constraint firstItem="eE8-eK-KYq" firstAttribute="bottom" secondItem="iRd-NA-bc4" secondAttribute="bottom" constant="70" id="gur-Z3-q9y"/>
+                            <constraint firstItem="gew-ot-d4c" firstAttribute="centerX" secondItem="8wL-cf-e4c" secondAttribute="centerX" id="niD-DB-zst"/>
+                            <constraint firstItem="Sy1-Lp-9bW" firstAttribute="top" secondItem="eE8-eK-KYq" secondAttribute="top" constant="350" id="oIe-dA-J3D"/>
+                            <constraint firstItem="gew-ot-d4c" firstAttribute="centerX" secondItem="eE8-eK-KYq" secondAttribute="centerX" id="r1n-p9-tcW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="iRd-NA-bc4" id="AP9-BW-oMV"/>
+                        <outlet property="imageView" destination="gew-ot-d4c" id="SBE-fE-RGZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlU-7l-lFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="108"/>
+            <point key="canvasLocation" x="1895.6521739130437" y="107.8125"/>
         </scene>
     </scenes>
     <resources>

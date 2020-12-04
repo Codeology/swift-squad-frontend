@@ -14,12 +14,13 @@ import AlamofireImage
 
 class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var backButton: UIButton!
-        var cirle1Color :String = ""
-       var cirle2Color :String = ""
-       var cirle3Color :String = ""
-       var cirle4Color :String = ""
-       var cirle5Color :String = ""
+        var circle1Color :String = ""
+       var circle2Color :String = ""
+       var circle3Color :String = ""
+       var circle4Color :String = ""
+       var circle5Color :String = ""
        
        let circle1 = CAShapeLayer();
        let circle2 = CAShapeLayer();
@@ -32,33 +33,37 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
            // Do any additional setup after loading the view.
             genText()
             drawCircles()
-           //loadImage()
+           loadImage()
        }
 
        func drawCircles() {
-             circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 65, y: 240, width: 102, height: 102)).cgPath;
-             circle1.fillColor = hexStringToUIColor(hex: cirle1Color).cgColor;
+             circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 109, y: 272, width: 102, height: 102)).cgPath;
+             circle1.fillColor = hexStringToUIColor(hex: circle1Color).cgColor;
              circle1.opacity = 1;
+            circle1.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
+            circle1.shadowRadius = 2.0;
+            circle1.shadowOpacity = 0.8;
+            circle1.shadowOffset = CGSize(width: 0, height: 4);
              view.layer.addSublayer(circle1);
              
-             circle2.path = UIBezierPath(ovalIn: CGRect(x: 74, y: 520, width: 79, height: 79)).cgPath;
+             circle2.path = UIBezierPath(ovalIn: CGRect(x: 102, y: 470, width: 79, height: 79)).cgPath;
              view.layer.addSublayer(circle2);
-             circle2.fillColor = hexStringToUIColor(hex: cirle2Color).cgColor
+             circle2.fillColor = hexStringToUIColor(hex: circle2Color).cgColor
              circle2.opacity = 1
              
-             circle3.path = UIBezierPath(ovalIn: CGRect(x: 74, y: 666, width: 79, height: 79)).cgPath;
+             circle3.path = UIBezierPath(ovalIn: CGRect(x: 102, y: 616, width: 79, height: 79)).cgPath;
              view.layer.addSublayer(circle3);
-             circle3.fillColor = hexStringToUIColor(hex: cirle3Color).cgColor
+             circle3.fillColor = hexStringToUIColor(hex: circle3Color).cgColor
              circle3.opacity = 1
              
-             circle4.path = UIBezierPath(ovalIn: CGRect(x: 212, y: 520, width: 79, height: 79)).cgPath;
+             circle4.path = UIBezierPath(ovalIn: CGRect(x: 240, y: 470, width: 79, height: 79)).cgPath;
              view.layer.addSublayer(circle4);
-             circle4.fillColor = hexStringToUIColor(hex: cirle4Color).cgColor
+             circle4.fillColor = hexStringToUIColor(hex: circle4Color).cgColor
              circle4.opacity = 1
              
-             circle5.path = UIBezierPath(ovalIn: CGRect(x: 212, y: 666, width: 79, height: 79)).cgPath;
+             circle5.path = UIBezierPath(ovalIn: CGRect(x: 240, y: 616, width: 79, height: 79)).cgPath;
              view.layer.addSublayer(circle5);
-             circle5.fillColor = hexStringToUIColor(hex: cirle5Color).cgColor
+             circle5.fillColor = hexStringToUIColor(hex: circle5Color).cgColor
              circle5.opacity = 1
         
             backButton.layer.shadowColor = UIColor.black.cgColor
@@ -69,30 +74,29 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
        
        func genText() {
            let selected = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-            selected.center = CGPoint(x: 220, y: 285)
+            selected.center = CGPoint(x: 264, y: 317)
             selected.textAlignment = .center
-            selected.text = cirle1Color
-            
+            selected.text = circle1Color
            
            let c1 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-           c1.center = CGPoint(x: 115, y: 500)
+           c1.center = CGPoint(x: 143, y: 450)
            c1.textAlignment = .center
-           c1.text = cirle2Color
+           c1.text = circle2Color
            
            let c2 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-           c2.center = CGPoint(x: 115, y: 646)
+           c2.center = CGPoint(x: 143, y: 596)
            c2.textAlignment = .center
-           c2.text = cirle3Color
+           c2.text = circle3Color
            
            let c3 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-           c3.center = CGPoint(x: 252, y: 500)
+           c3.center = CGPoint(x: 280, y: 450)
            c3.textAlignment = .center
-           c3.text = cirle4Color
+           c3.text = circle3Color
            
            let c4 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-           c4.center = CGPoint(x: 252, y: 646)
+           c4.center = CGPoint(x: 280, y: 596)
            c4.textAlignment = .center
-           c4.text = cirle4Color
+           c4.text = circle4Color
            
            self.view.addSubview(selected)
            self.view.addSubview(c1)
@@ -102,34 +106,11 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
        }
        
        func loadImage(){
-           let imageName = "yourImage.png"
-           let image = UIImage(named: imageName)
-           let imageView = UIImageView(image: image!)
-           imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+           let image = imageUsed
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 250)
            view.addSubview(imageView)
        }
-       
-      func hexStringToUIColor (hex:String) -> UIColor {
-              var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-
-              if (cString.hasPrefix("#")) {
-                  cString.remove(at: cString.startIndex)
-              }
-
-              if ((cString.count) != 6) {
-                  return UIColor.gray
-              }
-
-              var rgbValue:UInt64 = 0
-              Scanner(string: cString).scanHexInt64(&rgbValue)
-
-              return UIColor(
-                  red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-                  green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-                  blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-                  alpha: CGFloat(1.0)
-              )
-          }
     
     @IBAction func backButtonPressed(_ sender: Any) {
            dismiss(animated: true, completion: nil)

@@ -120,10 +120,10 @@ class SecondViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC : ThirdViewController = segue.destination as! ThirdViewController
         
-        destVC.cirle1Color = chosen
-        destVC.cirle2Color = first
-        destVC.cirle3Color = second
-        destVC.cirle4Color = third
-        destVC.cirle5Color = fourth
+        destVC.circle1Color = chosen
+        destVC.circle2Color = first
+        destVC.circle3Color = second
+        destVC.circle4Color = third
+        destVC.circle5Color = fourth
 }
 }
