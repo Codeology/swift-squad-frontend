@@ -14,6 +14,14 @@ public var colors = [String]()
 public var percentages = [Float]()
 public var imageUsed = UIImage()
 
+let circleLayer1 = CAShapeLayer();
+let circleLayer2 = CAShapeLayer();
+let circleLayer3 = CAShapeLayer();
+let circleLayer4 = CAShapeLayer();
+let circleLayer5 = CAShapeLayer();
+let circleLayer6 = CAShapeLayer();
+let circleLayer7 = CAShapeLayer();
+
 func hexStringToUIColor (hex:String) -> UIColor {
     var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
@@ -34,6 +42,16 @@ func hexStringToUIColor (hex:String) -> UIColor {
         blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
         alpha: CGFloat(1.0)
     )
+}
+
+func changeColors() {
+    circleLayer1.fillColor = hexStringToUIColor(hex: colors[0]).cgColor;
+    circleLayer2.fillColor = hexStringToUIColor(hex: colors[1]).cgColor;
+    circleLayer3.fillColor = hexStringToUIColor(hex: colors[2]).cgColor;
+    circleLayer4.fillColor = hexStringToUIColor(hex: colors[3]).cgColor;
+    circleLayer5.fillColor = hexStringToUIColor(hex: colors[4]).cgColor;
+    circleLayer6.fillColor = hexStringToUIColor(hex: colors[1]).cgColor;
+    circleLayer7.fillColor = hexStringToUIColor(hex: colors[2]).cgColor;
 }
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
@@ -135,43 +153,36 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
     }
     
     func drawCirclesAndButtons() {
-        let circleLayer1 = CAShapeLayer();
         circleLayer1.path = UIBezierPath(ovalIn: CGRect(x: 200, y: 290, width: 190, height: 190)).cgPath;
         view.layer.addSublayer(circleLayer1);
         circleLayer1.fillColor = hexStringToUIColor(hex: "D1E5AA").cgColor;
         circleLayer1.opacity = 0.8
         
-        let circleLayer2 = CAShapeLayer();
         circleLayer2.path = UIBezierPath(ovalIn: CGRect(x: 254, y: 237, width: 24, height: 24)).cgPath;
         view.layer.addSublayer(circleLayer2);
         circleLayer2.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer2.opacity = 0.8
         
-        let circleLayer3 = CAShapeLayer();
         circleLayer3.path = UIBezierPath(ovalIn: CGRect(x: 60, y: 100, width: 71, height: 71)).cgPath;
         view.layer.addSublayer(circleLayer3);
         circleLayer3.fillColor = hexStringToUIColor(hex: "D1E5AA").cgColor;
         circleLayer3.opacity = 0.8
         
-        let circleLayer4 = CAShapeLayer();
         circleLayer4.path = UIBezierPath(ovalIn: CGRect(x: 335, y: -5, width: 114, height: 114)).cgPath;
         view.layer.addSublayer(circleLayer4);
         circleLayer4.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer4.opacity = 0.8
         
-        let circleLayer5 = CAShapeLayer();
         circleLayer5.path = UIBezierPath(ovalIn: CGRect(x: -34, y: 500, width: 111, height: 111)).cgPath;
         view.layer.addSublayer(circleLayer5);
         circleLayer5.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;
         circleLayer5.opacity = 0.8
         
-        let circleLayer6 = CAShapeLayer();
         circleLayer6.path = UIBezierPath(ovalIn: CGRect(x: 105, y: 670, width: 125, height: 125)).cgPath;
         view.layer.addSublayer(circleLayer6);
         circleLayer6.fillColor = hexStringToUIColor(hex: "D1E5AA").cgColor;
         circleLayer6.opacity = 0.8
         
-        let circleLayer7 = CAShapeLayer();
         circleLayer7.path = UIBezierPath(ovalIn: CGRect(x: 350, y: 875, width: 28, height: 28)).cgPath;
         view.layer.addSublayer(circleLayer7);
         circleLayer7.fillColor = hexStringToUIColor(hex: "99cc99").cgColor;

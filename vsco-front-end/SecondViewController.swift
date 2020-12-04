@@ -33,6 +33,7 @@ class SecondViewController: UIViewController {
     
     // Go back to home page
     @IBAction func backButtonPressed(_ sender: Any) {
+        changeColors()
         dismiss(animated: true, completion: nil)
     }
     
