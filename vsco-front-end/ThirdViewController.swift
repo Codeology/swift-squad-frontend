@@ -14,7 +14,8 @@ import AlamofireImage
 
 class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
-       var cirle1Color :String = ""
+    @IBOutlet weak var backButton: UIButton!
+        var cirle1Color :String = ""
        var cirle2Color :String = ""
        var cirle3Color :String = ""
        var cirle4Color :String = ""
@@ -59,6 +60,11 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
              view.layer.addSublayer(circle5);
              circle5.fillColor = hexStringToUIColor(hex: cirle5Color).cgColor
              circle5.opacity = 1
+        
+            backButton.layer.shadowColor = UIColor.black.cgColor
+            backButton.layer.shadowOffset = CGSize(width: 0, height: 4.0)
+            backButton.layer.shadowRadius = 2
+            backButton.layer.shadowOpacity = 0.25
          }
        
        func genText() {

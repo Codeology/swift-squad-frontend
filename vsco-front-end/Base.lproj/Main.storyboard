@@ -138,11 +138,44 @@
                     <navigationItem key="navigationItem" id="znA-Cc-8Ac"/>
                     <connections>
                         <outlet property="backButton" destination="MbW-Sn-dVQ" id="vLS-9T-hM0"/>
+                        <segue destination="OUc-sg-ZSa" kind="presentation" identifier="Colors" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6R5-i3-6FL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="two-nD-wvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="108"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="wOa-7a-4dW">
+            <objects>
+                <viewController id="OUc-sg-ZSa" customClass="ThirdViewController" customModule="vsco_front_end" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8wL-cf-e4c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRd-NA-bc4">
+                                <rect key="frame" x="284" y="715" width="77" height="77"/>
+                                <state key="normal" image="Image"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="HHJ-wG-BmP" eventType="touchUpInside" id="Nce-N2-gcV"/>
+                                    <action selector="backButtonPressed:" destination="OUc-sg-ZSa" eventType="touchUpInside" id="wQ9-5L-DeO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eE8-eK-KYq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iRd-NA-bc4" firstAttribute="leading" secondItem="eE8-eK-KYq" secondAttribute="leading" constant="284" id="6ah-Tq-ypc"/>
+                            <constraint firstItem="eE8-eK-KYq" firstAttribute="bottom" secondItem="iRd-NA-bc4" secondAttribute="bottom" constant="70" id="gur-Z3-q9y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="iRd-NA-bc4" id="AP9-BW-oMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MlU-7l-lFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="108"/>
         </scene>
     </scenes>
     <resources>
