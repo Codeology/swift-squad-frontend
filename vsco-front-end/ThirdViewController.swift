@@ -37,7 +37,7 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
        }
 
        func drawCircles() {
-             circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 109, y: 272, width: 102, height: 102)).cgPath;
+             circle1.path = UIBezierPath.init(ovalIn: CGRect(x: 104, y: 272, width: 102, height: 102)).cgPath;
              circle1.fillColor = hexStringToUIColor(hex: circle1Color).cgColor;
              circle1.opacity = 1;
             circle1.shadowColor = hexStringToUIColor(hex: "9F9F9F").cgColor;
@@ -74,9 +74,10 @@ class ThirdViewController: UIViewController, UIImagePickerControllerDelegate & U
        
        func genText() {
            let selected = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-            selected.center = CGPoint(x: 264, y: 317)
+            selected.center = CGPoint(x: 264, y: 325)
             selected.textAlignment = .center
             selected.text = circle1Color
+            selected.font = UIFont.boldSystemFont(ofSize: 20.0)
            
            let c1 = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
            c1.center = CGPoint(x: 143, y: 450)
